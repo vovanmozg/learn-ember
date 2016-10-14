@@ -1,1 +1,22 @@
-CONTACT
+<div class="jumbotron text-center">
+    <h1>Please send me a message</h1>
+
+    <br/><br/>
+
+    <p></p>
+
+    <div class="form-horizontal form-group form-group-lg row">
+        <div class="">
+          {{input type="email" value=emailAddress class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
+        </div>
+        <div class="">
+        
+          {{textarea value=message class="form-control" placeholder="Your message. (At least 5 characters.)" rows="7" }}
+        </div>
+        <div class="">
+            <button class="btn btn-primary btn-lg btn-block" disabled={{isNotValidate}} {{action 'sendMessage'}}>Send</button>
+        </div>
+    </div>
+
+    <br/><br/>
+</div>
